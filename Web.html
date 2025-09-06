@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dartmouth LIN</title>
+    <link rel="stylesheet" href="Mods.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-logo">
+            <img src="images/Dartmouth LIN-2.png" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a onclick="showPage('home')">Home</a>
+            <a onclick="showPage('events')">Events</a>
+            <a onclick="showPage('about')">About</a>
+        </div>
+    </nav>
+
+<!-- make it so that we start at the top of the page when we click on the home button -->
+    <section id="home" class="page active">
+        <div class="hero professional-hero hero-bg">
+        <div class="hero-content">
+            <h1 class="hero-title">Dartmouth LIN</h1>
+            <p class="hero-tagline">Empowering Limbs. Empowering Lives.</p>
+            <!-- Optional: <a href="#about" class="hero-cta">Learn More</a> -->
+        </div>
+    </div>
+    <div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <!-- Volunteer Opportunities with plain color background -->
+    <div class="home-section color-section" style="background-color: #fff;">
+        <div class="feature-content">
+            <h3>Volunteer Opportunities</h3>
+            <p>Find ways to help in your community, from creating your own prosthetics to learning and sharing about the prosthetic making process.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown('volunteer-dropdown')">See Opportunities ▼</button>
+            <div class="dropdown-content" id="volunteer-dropdown">
+                <ul>
+                    <li>Prosthetic Assembly Workshops</li>
+                    <li>Community Outreach Events</li>
+                    <li>Peer Mentoring</li>
+                    <li>Fundraising Drives</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Support Services with another background image -->
+    <div class="home-section image-section" style="background-image: url('');">
+        <div class="overlay"></div>
+        <div class="feature-content">
+            <h3>Support Services</h3>
+            <p>Access resources for those in need, including prosthetic help, community groups, and counseling.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown('support-dropdown')">See Services ▼</button>
+            <div class="dropdown-content" id="support-dropdown">
+                <ul>
+                    <li>Prosthetic Fitting Assistance</li>
+                    <li>Peer Support Groups</li>
+                    <li>Counseling Services</li>
+                    <li>Resource Navigation</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Community Stories with plain color background -->
+    <div class="home-section color-section" style="background-color: #f9f9f9;">
+        <div class="feature-content">
+            <h3>Community Stories</h3>
+            <p>Read inspiring stories from volunteers and those they've helped.</p>
+            <button class="dropdown-btn" onclick="toggleDropdown('stories-dropdown')">See Stories ▼</button>
+            <div class="dropdown-content" id="stories-dropdown">
+                <div class="story">
+                    <img src="images/story1.jpg" alt="Story 1" class="story-img">
+                    <div>
+                        <strong>Maria's Journey</strong>
+                        <p>Maria received her first prosthetic hand through our program and now volunteers to help others.</p>
+                    </div>
+                </div>
+                <div class="story">
+                    <img src="images/story2.jpg" alt="Story 2" class="story-img">
+                    <div>
+                        <strong>John's Impact</strong>
+                        <p>John, a volunteer, shares how building prosthetics changed his perspective on community service.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section id="events" class="page">
+        <h2>Events</h2>
+        <div class="events-list-container">
+            <div class="events-group">
+                <h3>Upcoming Events</h3>
+                <div class="events-list">
+                    <div class="event">
+                        <h4>
+                            <a href="https://your-google-form-link.com" target="_blank" class="event-link"> Prosthetics Workshop</a>
+                        </h4>
+                        <p>Join us on September 20th to learn about the prosthetic making process.</p>
+                    </div>
+                    <div class="event">
+                        <h4>
+                            <a href = "https://your-google-form-link.com" target = "_blank" class = "event-link">Prosthetic Drive</a>
+                        </h4>
+                        <p>Help distribute and assemble prosthetics to hand out.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="events-group">
+                <h3>Previous Events</h3>
+                <div class="events-list">
+                    <div class="event">
+                        <h4>X</h4>
+                        <p>X</p>
+                    </div>
+                    <div class="event">
+                        <h4>X</h4>
+                        <p>X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="page">
+        <h2>About Us</h2>
+        <p>Mission Statement</p>
+        <p>Our mission is to x.</p>
+        <div class="leaders-container">
+            <div class="leader-card">
+                <img src="Images/J.jpg" alt="Leader Photo" class="leader-photo">
+                <h3>Leader Name</h3>
+                <button onclick="showDescription('leader-desc')">View Description</button>
+                <p id="leader-desc" class="leader-desc" style="display:none;">
+                    Leader description goes here. Click the button to show or hide this text.
+                </p>
+            </div>
+            <div class="leader-card">
+                <img src="Images/AAA.jpg" alt="Co-Leader Photo" class="leader-photo">
+                <h3>Co-Leader Name</h3>
+                <button onclick="showDescription('coleader-desc')">View Description</button>
+                <p id="coleader-desc" class="leader-desc" style="display:none;">
+                    Co-leader description goes here. Click the button to show or hide this text.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="bigmods.js"></script>
+
+    
+    <footer class="site-footer">
+    <div class="footer-logo">
+        <img src="images/Dartmouth LIN-2.png" alt="Logo">
+    </div>
+    <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a onclick="showPage('home')">Home</a></li>
+            <li><a onclick="showPage('events')">Events</a></li>
+            <li><a onclick="showPage('about')">About</a></li>
+        </ul>
+    </div>
+    <div class="footer-contact">
+        <h4>Contact Us</h4>
+        <p>Email: <a href="mailto:info@dartmouthlin.org">info@dartmouthlin.org</a></p>
+        <p>Phone: (555) 123-4567</p>
+        <p>Address: 123 Main St, Hanover, NH</p>
+    </div>
+</footer>
+</body>
+</html>
